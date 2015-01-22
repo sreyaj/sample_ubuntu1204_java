@@ -9,6 +9,7 @@ jdk:
 build_image: shippableimages/ubuntu1204_java:0.0.1
 
 before_install:
+   - apt-get update
    - apt-get install -y maven
    
 before_script:
